@@ -7,6 +7,8 @@ const app = express();
 const futurePurchases = require("./routes/futurePurchases");
 const listPurchases = require("./routes/listPurchases");
 
+const PORT = process.env.PORT || 3000;
+
 app.use(cors());
 
 app.use(
@@ -27,6 +29,7 @@ mongoose
   )
   .then(() => {
     console.log("Conectamos ao MongoDB!");
-    app.listen(3000);
+    app.listen(PORT),
+      () => console.log(`Servidor iniciado em http://localhost:${PORT}`);
   })
   .catch((error) => console.log(`erro: ${error}`));
