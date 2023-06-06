@@ -1,6 +1,6 @@
 {
   "name":"rancho-api",
-  "version": 1,
+  "version": 2,
   "public": true,
   "builds":[
     {
