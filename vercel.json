@@ -2,7 +2,7 @@
   "name":"rancho-api",
   "version": 2,
   "public": true,
-  "builds":[
+  "build":[
     {
       "src": "api/index.js",
       "use": "@vercel/node"
